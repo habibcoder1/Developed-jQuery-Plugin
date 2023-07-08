@@ -1,0 +1,24 @@
+/////////////// ** DIRECTION ** ///////
+1. At first use jQuery for this plugin (it's required)
+2. then add welcome.min.js file from our plugin
+3. and write script in your custom js file or script tag
+//////////////////////////////////////
+
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="welcome.min.js"></script>
+<script>
+	jQuery(document).ready(function(){
+
+		// welcome text plugin
+		jQuery('.welcome-text').welcome({   //.welcome-text is your class
+			text: 'Welcome to',  //text welcome text
+			name: 'HabibCoder',  //for name like company name 
+			size: '10px',        // for fontsize
+			color: '#333'        //for color    
+
+                       //if all empty then show default details  
+		});
+
+
+	});
+</script>
